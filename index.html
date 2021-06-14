@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ALLOCATION : </h1>
+    <input type="text" id="p0a" placeholder="P0 A">
+    <input type="text" id="p0b" placeholder="P0 B">
+    <input type="text" id="p0c" placeholder="P0 C">
+    <input type="text" id="p0d" placeholder="P0 D">
+    
+    <br>
+
+    <input type="text" id="p1a" placeholder="P1 A">
+    <input type="text" id="p1b" placeholder="P1 B">
+    <input type="text" id="p1c" placeholder="P1 C">
+    <input type="text" id="p1d" placeholder="P1 D">
+
+    <br>
+
+    <input type="text" id="p2a" placeholder="P2 A">
+    <input type="text" id="p2b" placeholder="P2 B">
+    <input type="text" id="p2c" placeholder="P2 C">
+    <input type="text" id="p2d" placeholder="P2 D">
+
+    <br>
+
+    <input type="text" id="p3a" placeholder="P3 A">
+    <input type="text" id="p3b" placeholder="P3 B">
+    <input type="text" id="p3c" placeholder="P3 C">
+    <input type="text" id="p3d" placeholder="P3 D">
+    
+    <br>
+
+    <input type="text" id="p4a" placeholder="P4 A">
+    <input type="text" id="p4b" placeholder="P4 B">
+    <input type="text" id="p4c" placeholder="P4 C">
+    <input type="text" id="p4d" placeholder="P4 D">
+
+    <br>
+
+    <h1>MAX : </h1>
+
+    <input type="text" id="mp0a" placeholder="P0 A">
+    <input type="text" id="mp0b" placeholder="P0 B">
+    <input type="text" id="mp0c" placeholder="P0 C">
+    <input type="text" id="mp0d" placeholder="P0 D">
+    
+    <br>
+
+    <input type="text" id="mp1a" placeholder="P1 A">
+    <input type="text" id="mp1b" placeholder="P1 B">
+    <input type="text" id="mp1c" placeholder="P1 C">
+    <input type="text" id="mp1d" placeholder="P1 D">
+
+    <br>
+
+    <input type="text" id="mp2a" placeholder="P2 A">
+    <input type="text" id="mp2b" placeholder="P2 B">
+    <input type="text" id="mp2c" placeholder="P2 C">
+    <input type="text" id="mp2d" placeholder="P2 D">
+
+    <br>
+
+    <input type="text" id="mp3a" placeholder="P3 A">
+    <input type="text" id="mp3b" placeholder="P3 B">
+    <input type="text" id="mp3c" placeholder="P3 C">
+    <input type="text" id="mp3d" placeholder="P3 D">
+    
+    <br>
+
+    <input type="text" id="mp4a" placeholder="P4 A">
+    <input type="text" id="mp4b" placeholder="P4 B">
+    <input type="text" id="mp4c" placeholder="P4 C">
+    <input type="text" id="mp4d" placeholder="P4 D">
+
+    <br>
+    
+
+    <h1>AVAILABLE : </h1>
+    <input type="text" id="ap0a" placeholder="P1 A">
+    <input type="text" id="ap0b" placeholder="P1 B">
+    <input type="text" id="ap0c" placeholder="P1 C">
+    <input type="text" id="ap0d" placeholder="P1 D">
+
+    <br>
+
+    <input type="submit" onclick="calculate()">
+
+    <script>
+        function calculate(){
+            
+            var allocation = new Array(new Array());
+            var max = new Array(new Array());
+            var available = new Array(new Array());
+            var need = new Array(new Array());
+
+
+            allocation[0][0] = Number(document.getElementById('p0a').value);
+            allocation[0][1] = Number(document.getElementById('p0b').value);
+            allocation[0][2] = Number(document.getElementById('p0c').value);
+            allocation[0][3] = Number(document.getElementById('p0d').value);
+
+            allocation[0][0] = Number(document.getElementById('p1a').value);
+            allocation[0][1] = Number(document.getElementById('p1b').value);
+            allocation[0][2] = Number(document.getElementById('p1c').value);
+            allocation[0][3] = Number(document.getElementById('p1d').value);
+
+            allocation[0][0] = Number(document.getElementById('p2a').value);
+            allocation[0][1] = Number(document.getElementById('p2b').value);
+            allocation[0][2] = Number(document.getElementById('p2c').value);
+            allocation[0][3] = Number(document.getElementById('p2d').value);
+
+            allocation[0][0] = Number(document.getElementById('p3a').value);
+            allocation[0][1] = Number(document.getElementById('p3b').value);
+            allocation[0][2] = Number(document.getElementById('p3c').value);
+            allocation[0][3] = Number(document.getElementById('p3d').value);
+
+            allocation[0][0] = Number(document.getElementById('p4a').value);
+            allocation[0][1] = Number(document.getElementById('p4b').value);
+            allocation[0][2] = Number(document.getElementById('p4c').value);
+            allocation[0][3] = Number(document.getElementById('p4d').value);
+       
+           
+
+            max[0][0] = Number(document.getElementById('mp0a').value);
+            max[0][1] = Number(document.getElementById('mp0b').value);
+            max[0][2] = Number(document.getElementById('mp0c').value);
+            max[0][3] = Number(document.getElementById('mp0d').value);
+
+            max[0][0] = Number(document.getElementById('mp1a').value);
+            max[0][1] = Number(document.getElementById('mp1b').value);
+            max[0][2] = Number(document.getElementById('mp1c').value);
+            max[0][3] = Number(document.getElementById('mp1d').value);
+
+            max[0][0] = Number(document.getElementById('mp2a').value);
+            max[0][1] = Number(document.getElementById('mp2b').value);
+            max[0][2] = Number(document.getElementById('mp2c').value);
+            max[0][3] = Number(document.getElementById('mp2d').value);
+
+            max[0][0] = Number(document.getElementById('mp3a').value);
+            max[0][1] = Number(document.getElementById('mp3b').value);
+            max[0][2] = Number(document.getElementById('mp3c').value);
+            max[0][3] = Number(document.getElementById('mp3d').value);
+
+            max[0][0] = Number(document.getElementById('mp4a').value);
+            max[0][1] = Number(document.getElementById('mp4b').value);
+            max[0][2] = Number(document.getElementById('mp4c').value);
+            max[0][3] = Number(document.getElementById('mp4d').value);
+        
+
+            available[0][0] = Number(document.getElementById('ap0a').value);
+            available[0][1] = Number(document.getElementById('ap0b').value);
+            available[0][2] = Number(document.getElementById('ap0c').value);
+            available[0][3] = Number(document.getElementById('ap0d').value);
+
+            
+            var i,j;
+            for(i=0;i<5;i++){
+                for(j=0;j<4;j++){
+                    need[i][j] = max[i][j]+allocation[i][j];
+                    alert("NEED "+i+""+j+": "+need[i][j]);
+                }
+            }
+        
+            for(i=0;i<5;i++){
+                for(j=0;j<4;j++){
+                    available[i][j] -= need[i][j];
+                    alert("AVAILABLE "+i+""+j+": "+need[i][j]);
+                    available[i][j] += max[i][j];
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>
